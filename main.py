@@ -1,7 +1,7 @@
 from operator import indexOf
 import streamlit as st
 import utils as utl
-from pages import problem, cleaning, processing, analysis, polate, advanced, prediction, conclude, references, code
+from pages import index, problem, cleaning, processing, analysis, polate, advanced, prediction, conclude, references, code
 
 st.set_page_config(layout="wide", page_title='Navbar sample')
 st.set_option('deprecation.showPyplotGlobalUse', False)
@@ -31,6 +31,6 @@ def navigation():
     elif route == "code":
         code.load_view()
     elif route == None:
-        indexOf.load_view()
+        index.load_view()
         
 navigation()
