@@ -4,6 +4,14 @@ Data Management Final Project
 ## Frameworks/Libraries
 
 Streamlit
-Flask
 FastAPI
 SQLite
+Pytest
+
+## Wrapped in
+HTML
+CSS
+JS
+
+## Custon domain: 
+housepriceprediction.ml
