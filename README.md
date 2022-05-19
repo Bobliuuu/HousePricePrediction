@@ -13,5 +13,7 @@ HTML
 CSS
 JS
 
+Embed streamlit site inside a website with custom domain, deployed and hosted with Netlify
+
 ## Custon domain: 
 housepriceprediction.ml
