@@ -2,9 +2,9 @@
 Data Management Final Project
 
 ## Files Description 
-/data -> Data for the project
-/site -> Netlify hosted web application
-/notebook -> Notebook files used to generate graphs and tables for report
+/data -> Data for the project <br>
+/site -> Netlify hosted web application <br>
+/notebook -> Notebook files used to generate graphs and tables for report <br>
 
 ### Frameworks/Libraries
 
