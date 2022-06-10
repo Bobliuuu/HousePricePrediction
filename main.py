@@ -7,7 +7,7 @@ if a == "Linear Regression":
     st.write('A linear regression model was created based on the sample data.')
     st.latex("$y_1 \sim mx_1$ + b ")
     x = int(st.number_input('Size of Living Area', 0, 1000000, 0, 1))
-    st.write('Price of House' + str(60.40067407*x + 80101.1986))
+    st.write('Price of House: ' + str(60.40067407*x + 80101.1986))
 elif a == "Quadratic Regression":
     st.title('"Quadratic Regression')
 elif a == "Exponential Regression":
