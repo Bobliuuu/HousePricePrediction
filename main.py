@@ -1,6 +1,6 @@
 import streamlit as st
 
-a = st.selectbox("View Page: ", ["linear", "quadratic", "exponential", "machine"])
+a = st.selectbox("View Page: ", ["intro", "linear", "quadratic", "exponential", "machine"])
 
 if a == "linear":
     st.title('Linear Regression')
@@ -10,7 +10,7 @@ elif a == "exponential":
     st.title('Initial Processing Of Data')
 elif a == "machine":
     st.title('Exploratory Data Analysis')
-elif a == None:
+elif a == "intro":
     st.title('House Price Prediction 🏘️🏙️📈📉')
     st.write('A web application demonstrating the results and conclusions of the House Price Prediction report.')
     st.write('This applet is part of the the final project for the MDM4U course, hosted under the GNU General Public LIcense.')
