@@ -33,7 +33,7 @@ elif a == "Exponential Regression":
     st.write('A exponential regression model was created based on the sample data.')
     st.latex("y_1 \sim ae^{bx_1} ")
     x = int(st.number_input('Size of Living Area', 0, 1000000, 0, 1))
-    st.write('Price of House: ' + str(103852*exp(0.000348*x))
+    st.write('Price of House: ' + str(103852*math.exp(0.000348*x)))
 elif a == "Machine Learning":
     st.title('Machine Learning')
     st.title('A number of machine learning models were trained on the dataset, in a Google Colab notebook.')
