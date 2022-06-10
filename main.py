@@ -1,15 +1,11 @@
 from asyncore import write
-import code
-from matplotlib.pyplot import title
+try:
+    import StringIO
+except ImportError:
+    from io import StringIO 
 import streamlit as st
 import math
-import numpy as np
 import pandas as pd
-from sklearn.linear_model import ElasticNet, Lasso
-from sklearn.kernel_ridge import KernelRidge
-import xgboost as xgb
-import lightgbm as lgb
-from sklearn.pipeline import make_pipeline
 import pickle
 
 a = st.selectbox("View Page: ", ["Intro", "Linear Regression", "Quadratic Regression", "Exponential Regression", "Machine Learning"])
@@ -36,7 +32,7 @@ elif a == "Exponential Regression":
     st.write('Price of House: ' + str(103852*math.exp(0.000348*x)))
 elif a == "Machine Learning":
     st.title('Machine Learning')
-    st.title('A number of machine learning models were trained on the dataset, in a Google Colab notebook.')
+    st.write('A number of machine learning models were trained on the dataset, in a Google Colab notebook.')
     with open("notebooks/Machine_Learning.ipynb", "rb") as file:
         btn = st.download_button(
             label="Download Machine Learning Notebook",
@@ -63,18 +59,25 @@ elif a == "Machine Learning":
     st.code("# After training each individual model\nensemble = stacked_pred*0.50 + xgb_pred*0.25 + lgb_pred*0.25")
     st.write("This code gave us the lowest RMSLE score of 1.0107.")
 
+    with open('models/ensemble.pkl', 'rb') as f:
+        ensemble = pickle.load(f)
+
     uploaded_file = st.file_uploader("Upload Testing Dataset")
     if uploaded_file is not None:
         df = pd.read_csv(uploaded_file)
-        st.write(dataframe)
+        result = pd.DataFrame()
+        result['Id'] = df['Id']
+        result['SalePrice'] = ensemble
+        s = StringIO()
+        result.to_csv(s)
+        csv_data = s.getvalue()
+        btn = st.download_button(
+            label="Sale Price Prediction Results",
+            data=csv_data,
+            file_name="result.csv",
+            mime="text/csv" 
+        )
 
-    with open('ensemble.pkl', 'rb') as f:
-        ensemble = pickle.load(f)
-
-    result = pd.DataFrame()
-    result['Id'] = df['Id']
-    result['SalePrice'] = ensemble
-    sub.to_csv('result.csv', index=False)
     
 elif a == "Intro":
     st.title('House Price Prediction 🏘️🏙️📈📉')
