@@ -10,7 +10,7 @@ elif a == "Exponential Regression":
     st.title('Exponential Regression')
 elif a == "Machine Learning":
     st.title('Machine Learning')
-elif a == "intro":
+elif a == "Intro":
     st.title('House Price Prediction 🏘️🏙️📈📉')
     st.write('A web application demonstrating the results and conclusions of the House Price Prediction report.')
     st.write('This applet is part of the the final project for the MDM4U course, hosted under the GNU General Public LIcense.')
@@ -21,4 +21,4 @@ elif a == "intro":
             file_name="House_Price_Prediction_Report.pdf",
             mime="application/octet-stream" # Converts file data to byte stream, parsing to cout
         )
-    st.write('')
+    st.write('To view pages, click on the dropdown bar at the top!')
