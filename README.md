@@ -4,7 +4,7 @@ Data Management Final Project
 ## Files Description 
 /data -> Data for the project <br>
 /site -> Netlify hosted web application <br>
-/notebook -> Notebook files used to generate graphs and tables for report <br>
+/notebook -> Notebook files used to generate graphs, tables, and models for report <br>
 
 ### Frameworks/Libraries
 
@@ -20,5 +20,5 @@ JS <br>
 
 Embed streamlit site inside a website with custom domain, deployed and hosted with Netlify
 
-### Custon domain: 
+### Custom domain: 
 housepriceprediction.ml
