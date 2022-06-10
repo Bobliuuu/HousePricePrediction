@@ -1,7 +1,6 @@
 import streamlit as st
 
-a = st.selectbox("View Page: ", ["problem", "cleaning", "processing", "analysis", "polate", "advanced", "prediction"
-                                 "conclude", "references", "code"])
+a = st.selectbox("View Page: ", ["linear", "quadratic", "exponential", "machine"])
 
 if a == "linear":
     st.title('Linear Regression')
