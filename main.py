@@ -14,21 +14,22 @@ if a == "Linear Regression":
     st.title('Linear Regression')
     st.write('A linear regression model was created based on the sample data.')
     st.latex("y_1 \sim ax_1 + b ")
-    x = int(st.number_input('Size of Living Area', 0, 1000000, 0, 1))
+    st.write("r^2 = 0.294")
+    x = int(st.number_input('Size of Living Area:', 0, 1000000, 0, 1))
     st.write('Price of House: ' + str(60.40067407*x + 80101.1986))
 elif a == "Quadratic Regression":
     st.title('Quadratic Regression')
-    st.title('Linear Regression')
     st.write('A quadratic regression model was created based on the sample data.')
     st.latex("y_1 \sim a{x_1}^2 + bx_1 + c ")
-    x = int(st.number_input('Size of Living Area', 0, 1000000, 0, 1))
+    st.write("R^2 = 0.407")
+    x = int(st.number_input('Size of Living Area:', 0, 1000000, 0, 1))
     st.write('Price of House: ' + str(-13459 + 168*x + -0.026*math.pow(x, 2)))
 elif a == "Exponential Regression":
     st.title('Exponential Regression')
-    st.title('Linear Regression')
     st.write('A exponential regression model was created based on the sample data.')
     st.latex("y_1 \sim ae^{bx_1} ")
-    x = int(st.number_input('Size of Living Area', 0, 1000000, 0, 1))
+    st.write("R^2 = 0.067")
+    x = int(st.number_input('Size of Living Area:', 0, 1000000, 0, 1))
     st.write('Price of House: ' + str(103852*math.exp(0.000348*x)))
 elif a == "Machine Learning":
     st.title('Machine Learning')
@@ -40,7 +41,7 @@ elif a == "Machine Learning":
             file_name="Machine_Learning.ipynb",
             mime="application/octet-stream" # Converts file data to byte stream, parsing to cout
         )
-    st.write("From an analysis of the machine learning models, (see report), we decided to use the ensemble prediction method,",
+    st.write("From an analysis of the machine learning models, (see report), I decided to use the ensemble prediction method,",
     "with a stacked averaging meta-model, and XGBoost and Light GBM gradient boosting.")
     st.code("stacked_models = StackingAveragedModels(base_models = (enet_model, xgb_model, kri_model),"+
                                                  "meta_model = lasso_model")
