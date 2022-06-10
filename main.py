@@ -8,7 +8,7 @@ import math
 import pandas as pd
 import pickle
 
-a = st.selectbox("View Page: ", ["Intro", "Linear Regression", "Quadratic Regression", "Exponential Regression", "Machine Learning"])
+a = st.selectbox("Table Of Contents: ", ["Intro", "Linear Regression", "Quadratic Regression", "Exponential Regression", "Machine Learning"])
 
 if a == "Linear Regression":
     st.title('Linear Regression')
