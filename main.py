@@ -1,15 +1,15 @@
 import streamlit as st
 
-a = st.selectbox("View Page: ", ["intro", "linear", "quadratic", "exponential", "machine"])
+a = st.selectbox("View Page: ", ["Intro", "Linear Regression", "Quadratic Regression", "Exponential Regression", "Machine Learning"])
 
-if a == "linear":
+if a == "Linear Regression":
     st.title('Linear Regression')
-elif a == "quadratic":
-    st.title('Cleaning The Data')
-elif a == "exponential":
-    st.title('Initial Processing Of Data')
-elif a == "machine":
-    st.title('Exploratory Data Analysis')
+elif a == "Quadratic Regression":
+    st.title('"Quadratic Regression')
+elif a == "Exponential Regression":
+    st.title('Exponential Regression')
+elif a == "Machine Learning":
+    st.title('Machine Learning')
 elif a == "intro":
     st.title('House Price Prediction 🏘️🏙️📈📉')
     st.write('A web application demonstrating the results and conclusions of the House Price Prediction report.')
@@ -21,3 +21,4 @@ elif a == "intro":
             file_name="House_Price_Prediction_Report.pdf",
             mime="application/octet-stream" # Converts file data to byte stream, parsing to cout
         )
+    st.write('')
