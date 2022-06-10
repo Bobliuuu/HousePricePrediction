@@ -4,6 +4,10 @@ a = st.selectbox("View Page: ", ["Intro", "Linear Regression", "Quadratic Regres
 
 if a == "Linear Regression":
     st.title('Linear Regression')
+    st.write('A linear regression model was created based on the sample data.')
+    st.latex("$y_1 \sim mx_1$ + b ")
+    x = st.text_input('Size of Living Area')
+    y = st.text_input('Price of House', 60.40067407*x + 80101.1986)
 elif a == "Quadratic Regression":
     st.title('"Quadratic Regression')
 elif a == "Exponential Regression":
