@@ -8,7 +8,7 @@ import math
 import pandas as pd
 import pickle
 
-a = st.selectbox("Table Of Contents: ", ["Intro", "Linear Regression", "Quadratic Regression", "Exponential Regression", "Machine Learning"])
+a = st.selectbox("Table Of Contents: ", ["Introduction", "Linear Regression", "Quadratic Regression", "Exponential Regression", "Machine Learning"])
 
 if a == "Linear Regression":
     st.title('Linear Regression')
@@ -80,7 +80,7 @@ elif a == "Machine Learning":
         )
 
     
-elif a == "Intro":
+elif a == "Introduction":
     st.title('House Price Prediction 🏘️🏙️📈📉')
     st.write('A web application demonstrating the results and conclusions of the House Price Prediction report.')
     st.write('This applet is part of the the final project for the MDM4U course, hosted under the GNU General Public LIcense.')
