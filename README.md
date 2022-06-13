@@ -1,13 +1,13 @@
-# HousingPrediction
-Data Management Final Project
+# House Price Prediction Report
+An analysis and prediction of house prices in Ames, Iowa, using the Ames housing dataset. 
 
 ## Files Description 
-/data -> Data for the project <br>
-/site -> Netlify hosted web application <br>
-/notebook -> Notebook files used to generate graphs, tables, and models for report <br>
+/data -> All data generated for the report and web application <br>
+/images -> Images cached for the web appplication <br>
+/notebooks -> Google Colab notebook (.ipynb) files used to generate graphs, tables, and models for report <br>
+/models -> Packaged pickle files of any machine learning models used to predict house prices
 
-### Frameworks/Libraries
-
+### Web Application
 Streamlit <br>
 FastAPI <br>
 SQLite <br>
@@ -17,8 +17,7 @@ Pytest
 HTML <br>
 CSS <br>
 JS <br>
-
-Embed streamlit site inside a website with custom domain, deployed and hosted with Netlify
+Deployed and hosted with Netlify
 
 ### Custom domain: 
 housepriceprediction.ml
