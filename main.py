@@ -51,7 +51,7 @@ elif a == "Machine Learning":
                              "reg_alpha=0.4640, reg_lambda=0.8571, "+
                              "subsample=0.5213, silent=1, "+
                              "random_state=7, nthread=-1")
-    st.code("lgb_model = lgb.LGBMRegressor(objective='regression',num_leaves=5,"
+    st.code("lgb_model = lgb.LGBMRegressor(objective='regression', num_leaves=5,"
                               "learning_rate=0.05, n_estimators=720, "+
                               "max_bin=55, bagging_fraction=0.8, "+
                               "bagging_freq=5, feature_fraction=0.2319, "+
