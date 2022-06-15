@@ -7,10 +7,13 @@ An analysis and prediction of house prices in Ames, Iowa, using the Ames housing
 /notebooks -> Google Colab notebook (.ipynb) files used to generate graphs, tables, and models for report <br>
 /models -> Packaged pickle files of any machine learning models used to predict house prices
 
+## Report
+Read the report [here](./House_Price_Prediction_Report.pdf)!
+
 ### Web Application
 An interactive web application was created to highlight many of the factors in the report. This was made with Streamlit, FastAPI, SQLite, and Pytest. 
 It was wrapped in an HTML, CSS, and JS iframe, deployed using Netlify Pages. 
 
 ### Custom domain: 
-housepriceprediction.ml
+[housepriceprediction.ml](https://housepriceprediction.ml/)
 
