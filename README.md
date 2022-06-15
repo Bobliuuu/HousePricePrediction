@@ -15,5 +15,5 @@ An interactive web application was created to highlight many of the factors in t
 It was wrapped in an HTML, CSS, and JS iframe, deployed using Netlify Pages. 
 
 ### Custom domain: 
-housepriceprediction.ml
+[housepriceprediction.ml](https://housepriceprediction.ml/)
 
